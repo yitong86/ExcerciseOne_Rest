@@ -1,33 +1,29 @@
 package com.perscholas.ExcerciseOne_Rest.model;
 
 import lombok.AccessLevel;
-import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.FieldDefaults;
 
-//@Data
 @NoArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class User {
+public class User1 {
     int id;
     String name;
     String email;
 
-    public User(int id, String name, String email) {
+    public User1(int id, String name, String email) {
         this.id = id;
         this.name = name;
         this.email = email;
     }
 
-    public User(int id, String name) {
+    public User1(int id, String name) {
         this.id = id;
         this.name = name;
     }
-
     public int getId() {
         return id;
     }
-
     public void setId(int id) {
         this.id = id;
     }
@@ -39,15 +35,12 @@ public class User {
     public void setName(String name) {
         this.name = name;
     }
-
     public String getEmail() {
         return email;
     }
-
     public void setEmail(String email) {
         this.email = email;
     }
-
     @Override
     public String toString() {
         return "User{" +

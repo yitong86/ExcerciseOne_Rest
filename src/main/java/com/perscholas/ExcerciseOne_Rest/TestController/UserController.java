@@ -1,5 +1,5 @@
 package com.perscholas.ExcerciseOne_Rest.TestController;
-import com.perscholas.ExcerciseOne_Rest.model.User;
+import com.perscholas.ExcerciseOne_Rest.model.User1;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -39,10 +39,10 @@ public class UserController {
     @ModelAttribute
     public void getUsers (Model model)
     {
-        User u1 = new User(1,"haseeb","haseeb@gmail.com");
-        User u2 = new User(2,"Josph","Josph@gmail.com");
-        User u3 = new User(3,"Ameer","Ameer@gmail.com");
-        List < User> myuser = new ArrayList < > ();
+        User1 u1 = new User1(1,"haseeb","haseeb@gmail.com");
+        User1 u2 = new User1(2,"Josph","Josph@gmail.com");
+        User1 u3 = new User1(3,"Ameer","Ameer@gmail.com");
+        List <User1> myuser = new ArrayList < > ();
         myuser.add(u1);
         myuser.add(u2);
         myuser.add(u3);
