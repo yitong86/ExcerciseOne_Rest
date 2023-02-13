@@ -6,18 +6,18 @@ import lombok.experimental.FieldDefaults;
 
 @NoArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class User {
+public class User3 {
     int id;
     String name;
     String email;
 
-    public User(int id, String name, String email) {
+    public User3(int id, String name, String email) {
         this.id = id;
         this.name = name;
         this.email = email;
     }
 
-    public User(int id, String name) {
+    public User3(int id, String name) {
         this.id = id;
         this.name = name;
     }
